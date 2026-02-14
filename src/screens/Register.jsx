@@ -77,6 +77,7 @@ const Register = () => {
           onChangeText={(text) => handleChange('name', text)}
           style={styles.input}
           activeOutlineColor="#3B82F6"
+          left={<TextInput.Icon icon="account" />}
         />
 
         <TextInput
@@ -86,6 +87,7 @@ const Register = () => {
           onChangeText={(text) => handleChange('email', text)}
           style={styles.input}
           activeOutlineColor="#3B82F6"
+          left={<TextInput.Icon icon="email" />}
         />
 
         <TextInput
@@ -96,6 +98,7 @@ const Register = () => {
           style={styles.input}
           keyboardType="phone-pad"
           activeOutlineColor="#3B82F6"
+          left={<TextInput.Icon icon="phone" />}
         />
 
         <TextInput
@@ -106,6 +109,7 @@ const Register = () => {
           onChangeText={(text) => handleChange('password', text)}
           style={styles.input}
           activeOutlineColor="#3B82F6"
+          left={<TextInput.Icon icon="lock" />}
         />
 
         <TextInput
@@ -115,6 +119,7 @@ const Register = () => {
           style={styles.input}
           onChangeText={(text) => handleChange('confirmPassword', text)}
           activeOutlineColor="#3B82F6"
+          left={<TextInput.Icon icon="lock" />}
         />
 
         <Button

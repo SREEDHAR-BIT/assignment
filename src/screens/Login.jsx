@@ -8,6 +8,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { Alert } from 'react-native'
 import {Users as InitialUsers} from '../data/data.js'
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 
 
@@ -60,6 +61,7 @@ const handleSubmit = async () => {
           style={styles.input}
           outlineColor="#CBD5E1"
           activeOutlineColor="#3B82F6"
+          left={<TextInput.Icon icon="account" />}
         />
 
         <TextInput
@@ -71,6 +73,7 @@ const handleSubmit = async () => {
           style={styles.input}
           outlineColor="#CBD5E1"
           activeOutlineColor="#3B82F6"
+          left={<TextInput.Icon icon="lock" />}
         />
 
         <Button
